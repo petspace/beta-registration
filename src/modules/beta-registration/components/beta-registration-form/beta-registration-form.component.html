@@ -1,3 +1,39 @@
 <div class="beta-registration-form">
+  <form class="form-input" (ngSubmit)="formSubmit()" [formGroup]="form.form">
+    <label class="form-input--signup-label">{{betaRegistrationInformation.otherContent.singUp}}</label>
+    <div class="form-control-feedback"
+         *ngIf="inputValid(form.controls.email)">
+      <h3>
+        {{betaRegistrationInformation.otherContent.emailValidationText}}
+      </h3>
+      <p>
+        {{betaRegistrationInformation.otherContent.emailValidationDescriptionText}}
+      </p>
+    </div>
+    <input class="form-input--registration background background__white" type="text"
+           [placeholder]="betaRegistrationInformation.placeholder.email"
+           name="email"
+           formControlName="email">
+
+    <div class="form-control-feedback"
+         *ngIf="inputValid(form.controls.ownerName)">
+      <h3>
+        {{betaRegistrationInformation.otherContent.ownerNameValidationText}}
+      </h3>
+      <p>
+        {{betaRegistrationInformation.otherContent.ownerNameValidationDescriptionText}}
+      </p>
+    </div>
+    <input class="form-input--registration background background__white" type="text"
+           [placeholder]="betaRegistrationInformation.placeholder.ownerName"
+           name="ownerName"
+           formControlName="ownerName">
+
+    <button class="form-input--registration form-input--submit" type="submit">
+      {{betaRegistrationInformation.otherContent.register}}
+    </button>
+  </form>
+
+  <i class="icon icon--home beta-registration-form__icon-home"></i>
 
 </div>

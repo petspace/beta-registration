@@ -1,5 +1,41 @@
 <div class="beta-registration-main">
-  <div class="beta-registration-main__form">
-    <app-beta-registration-form></app-beta-registration-form>
+
+  <div class="beta-registration-main__background">
+
+  </div>
+
+  <div class="beta-registration-main__container">
+    <div class="row">
+      <div class="beta-registration-main__dog">
+        <i class="icon icon--dog"></i>
+      </div>
+
+      <div class="beta-registration-main__title-content">
+        <h1 class="header header--m color color__white">{{content.JOIN_OUR_SOCIAL_NETWORK}}</h1>
+        <h2 class="header header--l color color__blue">
+          <i class="icon icon--logo header--logo-name"></i>
+        </h2>
+        <p class="text text--p font-size--s color color__white">
+          {{content.PLATFORM_DESCRIPTION}}
+        </p>
+      </div>
+
+      <div class="beta-registration-main__weather">
+        <div class="beta-registration-main__weather-icon">
+          <i class="icon icon--weather-sunny-cloud"></i>
+          <span class="text font-size--l color__white">{{temperature}}</span>
+          <span class="text font-size--m beta-registration-main__weather-temperature-icon color__white">&#x2103;</span>
+        </div>
+        <span class="beta-registration-main__weather-city font-size--m color__white">{{city}}</span>
+      </div>
+    </div>
+
+    <div class="beta-registration-main__form">
+      <app-beta-registration-form
+        [betaRegistrationInformation]="betaRegistrationInformation"
+        [onSubmit]="onFormSubmit">
+
+      </app-beta-registration-form>
+    </div>
   </div>
 </div>

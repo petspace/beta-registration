@@ -1,5 +1,49 @@
-.beta-registration-form-container {
+@import "../../../../scss/components/colors";
+.beta-registration-form {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 
-  &--bottom-left {
+  .form-input {
+    display: flex;
+    flex-direction: column;
+    min-width: 66%;
+
+    &--registration {
+      margin: 4px 0;
+      border-radius: 4px;
+      padding: 16px 20px;
+      border: 0;
+      font-size: 22px;
+      color: $grey_dark;
+
+      &::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+        color: $grey;
+        opacity: 1; /* Firefox */
+      }
+
+      :-ms-input-placeholder { /* Internet Explorer 10-11 */
+        color: red;
+      }
+    }
+
+    &--submit {
+      color: $white_dark;
+      background-color: $blue;
+      cursor: pointer;
+    }
+
+    &--signup-label {
+      font-size: 22px;
+      color: $blue;
+      margin: 15px 0;
+    }
+
+  }
+
+  &__icon-home {
+    width: 80px;
+    height: 99px;
+    align-self: center;
   }
 }

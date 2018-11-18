@@ -1,0 +1,25 @@
+$blue: #3f51b5;
+$green: #8bc34a;
+$orange: #ff9800;
+$blue_light: #81b9ef;
+$grey: #939393;
+$white_dark: #f1f2f0;
+$grey_dark: #4a4a4a;
+
+.color, .background {
+  &__white {
+    color: $white_dark;
+  }
+
+  &__blue {
+    color: $blue;
+  }
+
+  &__green {
+    color: $green;
+  }
+
+  &__oragne {
+    color: $orange;
+  }
+}

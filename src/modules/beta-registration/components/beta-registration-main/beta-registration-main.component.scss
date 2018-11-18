@@ -1,3 +1,117 @@
 .beta-registration-main {
 
+  &__background {
+    background-image: url("../../../../assets/svg/background.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+    width: 130%;
+    height: 100%;
+    background-color: #f1f2f0;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    margin-left: -10%;
+  }
+
+  &__container {
+    margin: 7% 3%;
+  }
+
+  &__dog {
+    .icon {
+      width: 166px;
+      height: 332px;
+    }
+  }
+
+  &__title-content {
+    max-width: 615px;
+
+    .header {
+      &--l {
+        margin-top: 6px;
+        margin-bottom: 30px;
+      }
+
+      &--logo-name {
+        width: 448px;
+        height: 76px;
+      }
+    }
+  }
+
+  &__weather {
+    &-icon {
+      display: flex;
+      justify-content: space-around;
+      align-items: flex-end;
+    }
+
+    .icon {
+      width: 78px;
+      height: 77px;
+    }
+
+    &-temperature-icon {
+      align-self: center;
+    }
+
+    &-city {
+      padding-left: 8px;
+    }
+  }
+
+  &__form {
+    width: 550px;
+    position: absolute;
+    bottom: 17%;
+  }
+
+  .icon {
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: inline-block;
+
+    &--dog {
+      background-image: url("../../../../assets/svg/dog.svg");
+    }
+
+    &--weather-cloudy {
+      background-image: url("../../../../assets/svg/cloud.svg");
+    }
+
+    &--weather-sunny-cloud {
+      background-image: url("../../../../assets/svg/sunny_cloud.svg");
+    }
+
+    &--home {
+      background-image: url("../../../../assets/svg/home.svg");
+    }
+
+    &--logo {
+      background-image: url("../../../../assets/svg/snoutyfriend.svg")
+    }
+  }
+
+  .header {
+    &--l {
+      font-size: 70px;
+    }
+
+    &--m {
+      font-size: 28px;
+    }
+
+    &--s {
+      font-size: 24px;
+    }
+  }
+
+  .row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
 }
